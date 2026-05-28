@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Setyora Labs</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="setyora_icon.png">
 
     <style>
 
@@ -28,22 +32,50 @@
         .container{
             max-width:900px;
             width:100%;
+
             background: rgba(255,255,255,0.05);
+
             border:1px solid rgba(255,255,255,0.1);
+
             backdrop-filter: blur(10px);
+
             border-radius:24px;
+
             padding:40px;
+
             box-shadow:0 10px 40px rgba(0,0,0,0.4);
         }
 
-        .logo{
-            font-size:48px;
-            font-weight:bold;
-            background: linear-gradient(90deg,#60a5fa,#a855f7);
-            -webkit-background-clip:text;
-            -webkit-text-fill-color:transparent;
+        /* LOGO AREA */
+
+        .logo-container{
+            display:flex;
+            align-items:center;
+            gap:20px;
             margin-bottom:10px;
         }
+
+        .main-logo{
+            width:90px;
+            height:90px;
+            object-fit:contain;
+            border-radius:22px;
+
+            box-shadow:
+                    0 0 25px rgba(96,165,250,0.25);
+        }
+
+        .logo-text{
+            font-size:48px;
+            font-weight:bold;
+
+            background: linear-gradient(90deg,#60a5fa,#a855f7);
+
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+
+        /* SUBTITLE */
 
         .subtitle{
             color:#cbd5e1;
@@ -51,6 +83,8 @@
             margin-bottom:35px;
             line-height:1.6;
         }
+
+        /* SECTION */
 
         .section{
             margin-top:35px;
@@ -62,22 +96,31 @@
             color:#93c5fd;
         }
 
+        /* PROJECT GRID */
+
         .grid{
             display:grid;
             grid-template-columns:1fr 1fr;
             gap:15px;
         }
 
+        /* CARD */
+
         .card{
             background: rgba(255,255,255,0.06);
+
             border:1px solid rgba(255,255,255,0.08);
+
             padding:20px;
+
             border-radius:18px;
+
             transition:0.3s;
         }
 
         .card:hover{
             transform:translateY(-5px);
+
             background: rgba(255,255,255,0.1);
         }
 
@@ -92,6 +135,8 @@
             line-height:1.6;
         }
 
+        /* SOCIAL LINKS */
+
         .social-links{
             display:flex;
             gap:20px;
@@ -102,8 +147,11 @@
         .social-btn{
             width:64px;
             height:64px;
+
             border-radius:18px;
+
             background:rgba(255,255,255,0.08);
+
             border:1px solid rgba(255,255,255,0.08);
 
             display:flex;
@@ -111,11 +159,13 @@
             align-items:center;
 
             transition:0.3s;
+
             text-decoration:none;
         }
 
         .social-btn:hover{
             transform:translateY(-5px);
+
             background:rgba(255,255,255,0.14);
         }
 
@@ -124,11 +174,15 @@
             height:32px;
         }
 
+        /* CONTACT */
+
         .contact{
             margin-top:15px;
             font-size:16px;
             color:#e2e8f0;
         }
+
+        /* FOOTER */
 
         .footer{
             margin-top:45px;
@@ -137,14 +191,26 @@
             font-size:14px;
         }
 
+        /* MOBILE */
+
         @media(max-width:700px){
 
             .grid{
                 grid-template-columns:1fr;
             }
 
-            .logo{
+            .logo-container{
+                flex-direction:column;
+                align-items:flex-start;
+            }
+
+            .logo-text{
                 font-size:38px;
+            }
+
+            .main-logo{
+                width:75px;
+                height:75px;
             }
 
         }
@@ -159,7 +225,17 @@
 
     <!-- LOGO -->
 
-    <div class="logo">Setyora Labs</div>
+    <div class="logo-container">
+
+        <img src="setyora_icon.png"
+             alt="Setyora Labs Logo"
+             class="main-logo">
+
+        <div class="logo-text">
+            Setyora Labs
+        </div>
+
+    </div>
 
     <!-- SUBTITLE -->
 
