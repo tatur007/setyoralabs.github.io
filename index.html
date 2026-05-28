@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Setyora Labs</title>
 
     <style>
@@ -91,9 +92,36 @@
             line-height:1.6;
         }
 
-        .link-card{
+        .social-links{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+            align-items:center;
+        }
+
+        .social-btn{
+            width:64px;
+            height:64px;
+            border-radius:18px;
+            background:rgba(255,255,255,0.08);
+            border:1px solid rgba(255,255,255,0.08);
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            transition:0.3s;
             text-decoration:none;
-            color:white;
+        }
+
+        .social-btn:hover{
+            transform:translateY(-5px);
+            background:rgba(255,255,255,0.14);
+        }
+
+        .social-btn img{
+            width:32px;
+            height:32px;
         }
 
         .contact{
@@ -122,13 +150,18 @@
         }
 
     </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
+    <!-- LOGO -->
+
     <div class="logo">Setyora Labs</div>
+
+    <!-- SUBTITLE -->
 
     <div class="subtitle">
         Solo indie developer creating simple yet useful Android apps and games.
@@ -143,21 +176,25 @@
         <div class="grid">
 
             <div class="card">
+
                 <h3>Simple Loan Calculator</h3>
 
                 <p>
                     Modern offline loan calculator with installment breakdown,
                     export features, and multi-currency support.
                 </p>
+
             </div>
 
             <div class="card">
+
                 <h3>Endless Streak Quiz</h3>
 
                 <p>
                     Fast-paced quiz game with streak mechanics,
                     global questions, and competitive gameplay.
                 </p>
+
             </div>
 
         </div>
@@ -170,53 +207,38 @@
 
         <h2>Links</h2>
 
-        <div class="grid">
+        <div class="social-links">
 
-            <a class="link-card"
+            <!-- GOOGLE PLAY -->
+
+            <a class="social-btn"
                href="https://play.google.com/store/apps/dev?id=8396518609609196773"
                target="_blank">
 
-                <div class="card">
-
-                    <h3>Google Play</h3>
-
-                    <p>
-                        Explore Android apps and games published by Setyora Labs.
-                    </p>
-
-                </div>
+                <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png"
+                     alt="Google Play">
 
             </a>
 
-            <a class="link-card"
+            <!-- YOUTUBE -->
+
+            <a class="social-btn"
                href="https://www.youtube.com/@Setyoradev"
                target="_blank">
 
-                <div class="card">
-
-                    <h3>YouTube</h3>
-
-                    <p>
-                        Watch game teasers, trailers, and development content.
-                    </p>
-
-                </div>
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                     alt="YouTube">
 
             </a>
 
-            <a class="link-card"
+            <!-- GITHUB -->
+
+            <a class="social-btn"
                href="https://github.com/tatur007"
                target="_blank">
 
-                <div class="card">
-
-                    <h3>GitHub</h3>
-
-                    <p>
-                        Open source repositories and Android development projects.
-                    </p>
-
-                </div>
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+                     alt="GitHub">
 
             </a>
 
